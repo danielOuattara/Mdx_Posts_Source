@@ -1,0 +1,109 @@
+---
+title: Gatsby Tutorial
+slug: gatsby-tutorial
+image: ./images/gatsby-1.png
+date: 2020-05-27
+author: john smith
+category: gatsby
+readTime: 14
+---
+
+import { Link } from "gatsby";
+import { FiInfo } from "react-icons/fi";
+import { Counter, LikeButton } from "./../../components/Complete";
+
+[visit Google](https://www.google.com)
+
+**Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Culpa deserunt accusamus quibusdam consequatur**
+
+_doloribus odit rem unde sint repellendus harum eius
+dignissimos dolore quas praesentium dolorum dolor_,
+
+# aspernatur odio. Expedita
+
+## nesciunt iste rem ab sint quae necessitatibus itaque delectus
+
+###### vero modi vitae debitis beatae eos, nisi eaque sed dolores
+
+deleniti laborum suscipit officia quidem consequuntur.
+Unde eius autem dicta facere voluptatum, tenetur dignissimos
+laudantium natus qui repudiandae amet, neque cum omnis delectus
+aperiam necessitatibus ratione, veniam ipsum at! Accusantium
+unde alias perferendis deserunt quae repudiandae in nulla ea
+delectus! Porro, aliquid temporibus! Ipsum obcaecati quae
+laudantium voluptate doloremque enim reiciendis.
+
+<h1 className="special">jsx heading one</h1>
+
+```js
+const firstName = "John";
+const lastName = "Doe";
+```
+
+<div className="code">
+
+```js
+const firstName = "John";
+const lastName = "Doe";
+```
+
+</div>
+
+<div className="nice-text">
+
+<h3>Nice text</h3>
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias enim
+laboriosam consequuntur provident nihil officia, quas quo ex facere quasi aut
+repellendus, amet, eaque perferendis ab nisi veniam deleniti deserunt
+praesentium vitae! Aliquid ex saepe illo explicabo blanditiis aliquam quibusdam,
+dolorem iusto tempore totam provident odio enim excepturi magni, odit quaerat ad
+hic ipsum. Aut corrupti minima inventore excepturi laboriosam deserunt ullam
+vitae dolor rem delectus, saepe quisquam expedita sed, necessitatibus
+voluptatibus, eaque obcaecati deleniti recusandae ratione blanditiis doloremque
+reiciendis iste? Natus aspernatur nobis cupiditate ab ipsum ipsa ut.
+
+</div>
+
+<h2>React components</h2>
+
+<Counter />
+
+```jsx
+import React from "react";
+import styled from "styled-components";
+import { AiOutlineLike } from "react-icons/ai";
+
+console.log("props  = ", props);
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0);
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  );
+};
+
+export default LikeButton;
+```
+
+<LikeButton />
+
+![nice image](./images/gatsby-1.png)
+
+<Link to="/posts" className="btn center-btn">
+  navigate to all posts page
+</Link>
