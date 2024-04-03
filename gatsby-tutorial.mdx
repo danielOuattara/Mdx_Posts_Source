@@ -48,13 +48,15 @@ const firstName = "John";
 const lastName = "Doe";
 ```
 
+![nice image](./images/gatsby-1.png)
+
 </div>
 
 <div className="nice-text">
 
 <h3>Nice text</h3>
 
-<FiInfo className="nice-text-icon"></FiInfo>
+<FiInfo className="nice-text-icon"/>
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias enim
 laboriosam consequuntur provident nihil officia, quas quo ex facere quasi aut
@@ -71,13 +73,14 @@ reiciendis iste? Natus aspernatur nobis cupiditate ab ipsum ipsa ut.
 <h2>React components</h2>
 
 ```jsx
-<Counter />
+<Counter />;
 
 import React from "react";
 import styled from "styled-components";
 import { AiOutlineLike } from "react-icons/ai";
 
 console.log("props  = ", props);
+
 const LikeButton = () => {
   const [value, setValue] = React.useState(0);
   return (
@@ -98,10 +101,8 @@ const LikeButton = () => {
 };
 
 export default LikeButton;
-<LikeButton />
+
 <Link to="/posts" className="btn center-btn">
   navigate to all posts page
-</Link>
+</Link>;
 ```
-
-![nice image](./images/gatsby-1.png)
